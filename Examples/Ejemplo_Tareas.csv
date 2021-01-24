@@ -1,0 +1,12 @@
+DURACIÓN PROYECTO:,365,,,,,,,,,
+,,,,,,,,,,
+TAREAS,,,,,,,Milestones,,,
+ID,NOMBRE,SUBTAREAS,INICIO,DURACIÓN,DEPENDENCIAS,,ID,NOMBRE,INICIO,DEPENDENCIAS
+ID1,Tarea 1,ID11&ID12&ID13,2021-01-07,,,,Ev,Evento,2021-01-25,
+ID11,Tarea 1.1,,,15,,,,,,
+ID12,Tarea 1.2,,,20,,,,,,
+ID13,Tarea 1.3,,,30,,,,,,
+ID2,Tarea 2,,,30,ID12,,,,,
+ID3,Tarea 3,ID31&ID32,,,ID13&Ev,,,,,
+ID31,Tarea 3.1,,,20,,,,,,
+ID32,Tarea 3.2,,,20,,,,,,
