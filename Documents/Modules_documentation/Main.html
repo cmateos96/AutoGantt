@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Main</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Main</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/cmateos/TFG/Code/Main.py">/home/cmateos/TFG/Code/Main.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="GestionTareas.html">GestionTareas</a><br>
+<a href="Parse.html">Parse</a><br>
+</td><td width="25%" valign=top><a href="Proyecto.html">Proyecto</a><br>
+<a href="Tarea.html">Tarea</a><br>
+</td><td width="25%" valign=top><a href="datetime.html">datetime</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-comprobar_existencia_planitlla_y__devolver_path_absoluto"><strong>comprobar_existencia_planitlla_y__devolver_path_absoluto</strong></a>()</dt><dd><tt>Comprueba&nbsp;que&nbsp;exista&nbsp;un&nbsp;archivo&nbsp;con&nbsp;extensión&nbsp;.cvs&nbsp;en&nbsp;el&nbsp;directorio&nbsp;de&nbsp;Program_files&nbsp;del&nbsp;programa<br>
+y&nbsp;devuelve&nbsp;el&nbsp;path&nbsp;absoluto&nbsp;de&nbsp;dicho&nbsp;archivo&nbsp;<br>
+&nbsp;<br>
+Devuelve:<br>
+path&nbsp;absoluto&nbsp;del&nbsp;archivo&nbsp;.csv<br>
+&nbsp;<br>
+Excepciones:<br>
+termina&nbsp;la&nbsp;ejecución&nbsp;del&nbsp;programa&nbsp;si&nbsp;no&nbsp;encuentra&nbsp;un&nbsp;archivo&nbsp;.csv</tt></dd></dl>
+ <dl><dt><a name="-crear_tjp"><strong>crear_tjp</strong></a>(proyecto)</dt><dd><tt>Crea&nbsp;el&nbsp;archivo&nbsp;.tjp&nbsp;para&nbsp;después&nbsp;ser&nbsp;procesado&nbsp;por&nbsp;la&nbsp;herramienta&nbsp;TaskJuggler<br>
+&nbsp;<br>
+Prámetros:<br>
+proyecto(proyecto)&nbsp;-&nbsp;objeto&nbsp;de&nbsp;tipo&nbsp;proyecto&nbsp;que&nbsp;contiene&nbsp;toda&nbsp;la&nbsp;información&nbsp;necesaria&nbsp;para&nbsp;definir&nbsp;las&nbsp;tareas&nbsp;de&nbsp;TaskJuggler</tt></dd></dl>
+ <dl><dt><a name="-definir_tareas"><strong>definir_tareas</strong></a>(proyecto)</dt><dd><tt>Escribe&nbsp;en&nbsp;el&nbsp;documento&nbsp;de&nbsp;definición&nbsp;de&nbsp;TaskJuggler&nbsp;los&nbsp;elementos&nbsp;task&nbsp;y&nbsp;sus&nbsp;campos&nbsp;elemento.<br>
+Prámetros:<br>
+proyecto(proyecto)&nbsp;-&nbsp;objeto&nbsp;de&nbsp;tipo&nbsp;proyecto&nbsp;que&nbsp;contiene&nbsp;toda&nbsp;la&nbsp;información&nbsp;necesaria&nbsp;para&nbsp;definir&nbsp;las&nbsp;tareas&nbsp;de&nbsp;TaskJuggler</tt></dd></dl>
+ <dl><dt><a name="-escribe_tarea"><strong>escribe_tarea</strong></a>(arbol, nodo, file, tabuladores)</dt><dd><tt>Escribe&nbsp;en&nbsp;file&nbsp;el&nbsp;contenido&nbsp;de&nbsp;la&nbsp;tarea&nbsp;que&nbsp;haya&nbsp;en&nbsp;el&nbsp;nodo&nbsp;del&nbsp;arbol.<br>
+Prámetros:<br>
+arbol(arbol)&nbsp;-&nbsp;arbol&nbsp;cuyo&nbsp;contenido&nbsp;son&nbsp;objetos&nbsp;tarea<br>
+nodo(arbol)&nbsp;-&nbsp;nodo&nbsp;que&nbsp;contiene&nbsp;la&nbsp;tarea&nbsp;a&nbsp;escribir<br>
+file(file)&nbsp;-&nbsp;descriptor&nbsp;de&nbsp;fichero&nbsp;abierto&nbsp;donde&nbsp;se&nbsp;va&nbsp;a&nbsp;escribir<br>
+tabuladores(int)&nbsp;-&nbsp;variable&nbsp;interna&nbsp;que&nbsp;indica&nbsp;el&nbsp;número&nbsp;de&nbsp;tabuladores&nbsp;que&nbsp;hay&nbsp;que&nbsp;escribir&nbsp;antes&nbsp;de&nbsp;cada&nbsp;línea&nbsp;para&nbsp;que&nbsp;quede&nbsp;estético</tt></dd></dl>
+ <dl><dt><a name="-escribir_dependencias_tarea"><strong>escribir_dependencias_tarea</strong></a>(file, tabuladores, tarea, arbol)</dt><dd><tt>Escribe&nbsp;en&nbsp;el&nbsp;fichero&nbsp;file&nbsp;las&nbsp;dependencias&nbsp;de&nbsp;tarea,&nbsp;precedida&nbsp;de&nbsp;tantos&nbsp;tabuladores&nbsp;como&nbsp;indique&nbsp;tabuladores<br>
+&nbsp;<br>
+Parámetros:<br>
+f(file)&nbsp;-&nbsp;fichero&nbsp;donde&nbsp;se&nbsp;van&nbsp;a&nbsp;escribir&nbsp;los&nbsp;tabuladores<br>
+tabuladores(int)&nbsp;-&nbsp;cantidad&nbsp;de&nbsp;tabuladores&nbsp;que&nbsp;se&nbsp;van&nbsp;a&nbsp;insertar&nbsp;en&nbsp;el&nbsp;fichero<br>
+tarea(tarea)&nbsp;-&nbsp;tarea&nbsp;procesada<br>
+arbol(arbol)&nbsp;-&nbsp;árbol&nbsp;al&nbsp;que&nbsp;pertenece&nbsp;la&nbsp;tarea</tt></dd></dl>
+ <dl><dt><a name="-escribir_duracion_tarea"><strong>escribir_duracion_tarea</strong></a>(file, tabuladores, tarea)</dt><dd><tt>Escribe&nbsp;en&nbsp;el&nbsp;fichero&nbsp;file&nbsp;la&nbsp;duracion&nbsp;de&nbsp;la&nbsp;tarea,&nbsp;precedida&nbsp;de&nbsp;tantos&nbsp;tabuladores&nbsp;como&nbsp;indique&nbsp;tabuladores<br>
+&nbsp;<br>
+Parámetros:<br>
+f(file)&nbsp;-&nbsp;fichero&nbsp;donde&nbsp;se&nbsp;van&nbsp;a&nbsp;escribir&nbsp;los&nbsp;tabuladores<br>
+tabuladores(int)&nbsp;-&nbsp;cantidad&nbsp;de&nbsp;tabuladores&nbsp;que&nbsp;se&nbsp;van&nbsp;a&nbsp;insertar&nbsp;en&nbsp;el&nbsp;fichero<br>
+tarea(tarea)&nbsp;-&nbsp;tarea&nbsp;procesada</tt></dd></dl>
+ <dl><dt><a name="-escribir_inicio_tarea"><strong>escribir_inicio_tarea</strong></a>(file, tabuladores, tarea)</dt><dd><tt>Escribe&nbsp;en&nbsp;el&nbsp;fichero&nbsp;file&nbsp;el&nbsp;inicio&nbsp;de&nbsp;la&nbsp;tarea,&nbsp;precedida&nbsp;de&nbsp;tantos&nbsp;tabuladores&nbsp;como&nbsp;indique&nbsp;tabuladores<br>
+&nbsp;<br>
+Parámetros:<br>
+f(file)&nbsp;-&nbsp;fichero&nbsp;donde&nbsp;se&nbsp;van&nbsp;a&nbsp;escribir&nbsp;los&nbsp;tabuladores<br>
+tabuladores(int)&nbsp;-&nbsp;cantidad&nbsp;de&nbsp;tabuladores&nbsp;que&nbsp;se&nbsp;van&nbsp;a&nbsp;insertar&nbsp;en&nbsp;el&nbsp;fichero<br>
+tarea(tarea)&nbsp;-&nbsp;tarea&nbsp;procesada</tt></dd></dl>
+ <dl><dt><a name="-escribir_projetc"><strong>escribir_projetc</strong></a>(proyecto)</dt><dd><tt>Escribe&nbsp;en&nbsp;el&nbsp;documento&nbsp;de&nbsp;definición&nbsp;de&nbsp;TaskJuggler&nbsp;el&nbsp;elemento&nbsp;project&nbsp;y&nbsp;sus&nbsp;campos<br>
+&nbsp;<br>
+Prámetros:<br>
+proyecto(Proyecto)&nbsp;-&nbsp;objeto&nbsp;de&nbsp;tipo&nbsp;proyecto&nbsp;que&nbsp;contiene&nbsp;toda&nbsp;la&nbsp;información&nbsp;necesaria&nbsp;para&nbsp;definir&nbsp;el&nbsp;elemento&nbsp;proyecto&nbsp;de&nbsp;TaskJuggler</tt></dd></dl>
+ <dl><dt><a name="-escribir_subtareas_tarea"><strong>escribir_subtareas_tarea</strong></a>(file, tabuladores, nodo, arbol)</dt><dd><tt>Escribe&nbsp;en&nbsp;el&nbsp;fichero&nbsp;file&nbsp;las&nbsp;subtareas&nbsp;de&nbsp;la&nbsp;tarea&nbsp;contenida&nbsp;en&nbsp;nodo,&nbsp;precedida&nbsp;de&nbsp;tantos&nbsp;tabuladores&nbsp;como&nbsp;indique&nbsp;tabuladores<br>
+&nbsp;<br>
+Parámetros:<br>
+f(file)&nbsp;-&nbsp;fichero&nbsp;donde&nbsp;se&nbsp;van&nbsp;a&nbsp;escribir&nbsp;los&nbsp;tabuladores<br>
+tabuladores(int)&nbsp;-&nbsp;cantidad&nbsp;de&nbsp;tabuladores&nbsp;que&nbsp;se&nbsp;van&nbsp;a&nbsp;insertar&nbsp;en&nbsp;el&nbsp;fichero<br>
+nodo(arbol)&nbsp;-&nbsp;tarea&nbsp;procesada&nbsp;cuyos&nbsp;hijos&nbsp;son&nbsp;sus&nbsp;subtareas<br>
+arbol(arbol)&nbsp;-&nbsp;árbol&nbsp;al&nbsp;que&nbsp;pertenece&nbsp;nodo</tt></dd></dl>
+ <dl><dt><a name="-gererar_reportes"><strong>gererar_reportes</strong></a>(proyecto)</dt><dd><tt>Escribe&nbsp;en&nbsp;el&nbsp;documento&nbsp;de&nbsp;definición&nbsp;de&nbsp;TaskJuggler&nbsp;los&nbsp;comandos&nbsp;necesarios&nbsp;para&nbsp;que&nbsp;TaskJuggler&nbsp;genere&nbsp;reportes.<br>
+&nbsp;<br>
+Parámetros:<br>
+proyecto(proyecto)&nbsp;-&nbsp;objeto&nbsp;que&nbsp;tiene&nbsp;toda&nbsp;la&nbsp;información&nbsp;que&nbsp;decine&nbsp;el&nbsp;proyecto</tt></dd></dl>
+ <dl><dt><a name="-ls"><strong>ls</strong></a>(ruta='/home/cmateos/TFG/Code')</dt><dd><tt>Lista&nbsp;todos&nbsp;los&nbsp;archivos&nbsp;del&nbsp;directorio&nbsp;que&nbsp;se&nbsp;reciba&nbsp;como&nbsp;parámetro<br>
+&nbsp;<br>
+Devuelve:<br>
+Lista&nbsp;con&nbsp;los&nbsp;nombres&nbsp;de&nbsp;los&nbsp;archivos<br>
+&nbsp;<br>
+Prámetros:<br>
+ruta(string)&nbsp;-&nbsp;path&nbsp;del&nbsp;directorio&nbsp;del&nbsp;cual&nbsp;se&nbsp;quieren&nbsp;obtener&nbsp;los&nbsp;nombres&nbsp;de&nbsp;sus&nbsp;archivos</tt></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><tt>Método&nbsp;principal.</tt></dd></dl>
+ <dl><dt><a name="-obtener_path_absoluto_codigo"><strong>obtener_path_absoluto_codigo</strong></a>()</dt><dd><tt>Obtiene&nbsp;el&nbsp;path&nbsp;absoluto&nbsp;de&nbsp;la&nbsp;carpeta&nbsp;que&nbsp;contiene&nbsp;el&nbsp;script</tt></dd></dl>
+ <dl><dt><a name="-tabular"><strong>tabular</strong></a>(f, tabuladores)</dt><dd><tt>Escribe&nbsp;en&nbsp;el&nbsp;fichero&nbsp;f&nbsp;tantos&nbsp;tabuladores&nbsp;como&nbsp;indique&nbsp;la&nbsp;variable&nbsp;tabuladores<br>
+&nbsp;<br>
+Parámetros:<br>
+f(file)&nbsp;-&nbsp;fichero&nbsp;donde&nbsp;se&nbsp;van&nbsp;a&nbsp;escribir&nbsp;los&nbsp;tabuladores<br>
+tabuladores(int)&nbsp;-&nbsp;cantidad&nbsp;de&nbsp;tabuladores&nbsp;que&nbsp;se&nbsp;van&nbsp;a&nbsp;insertar&nbsp;en&nbsp;el&nbsp;fichero</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>MAIN</strong> = 'Main.py'<br>
+<strong>PROGRAM_FILES_RELATIVA</strong> = '../Program_Files/'</td></tr></table>
+</body></html>

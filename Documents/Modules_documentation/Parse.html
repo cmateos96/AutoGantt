@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Parse</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Parse</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/cmateos/TFG/Code/Parse.py">/home/cmateos/TFG/Code/Parse.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="Tarea.html">Tarea</a><br>
+<a href="csv.html">csv</a><br>
+</td><td width="25%" valign=top><a href="datetime.html">datetime</a><br>
+<a href="random.html">random</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-anhadir_id_lista"><strong>anhadir_id_lista</strong></a>(id, lista_ids)</dt><dd><tt>Añade&nbsp;un&nbsp;id&nbsp;a&nbsp;una&nbsp;lista<br>
+&nbsp;<br>
+Parámetros:<br>
+id(string)&nbsp;-&nbsp;id&nbsp;a&nbsp;añadir<br>
+lista_ids(list)&nbsp;-&nbsp;lista&nbsp;de&nbsp;id&nbsp;a&nbsp;la&nbsp;que&nbsp;se&nbsp;añadirá</tt></dd></dl>
+ <dl><dt><a name="-cast_dependencias"><strong>cast_dependencias</strong></a>(dependencias_string)</dt><dd><tt>Convierte&nbsp;una&nbsp;cadena&nbsp;con&nbsp;las&nbsp;dependecias&nbsp;de&nbsp;una&nbsp;tarea&nbsp;en&nbsp;una&nbsp;lista&nbsp;que&nbsp;contiene&nbsp;el&nbsp;ID&nbsp;de&nbsp;dichas&nbsp;tareas.<br>
+&nbsp;<br>
+Devuelve:<br>
+Lista&nbsp;con&nbsp;la&nbsp;las&nbsp;dependencias.&nbsp;Si&nbsp;no&nbsp;tiene&nbsp;dependencias&nbsp;devuelve&nbsp;una&nbsp;lista&nbsp;vacía.<br>
+&nbsp;<br>
+Parámetros:<br>
+dependencias_string(string)&nbsp;-&nbsp;cadena&nbsp;que&nbsp;contiene&nbsp;las&nbsp;subtareas&nbsp;en&nbsp;formato&nbsp;num1&amp;num2&amp;num3...&nbsp;o&nbsp;num<br>
+&nbsp;<br>
+Excepciones:<br>
+Si&nbsp;la&nbsp;cadena&nbsp;no&nbsp;tiene&nbsp;alguno&nbsp;de&nbsp;los&nbsp;formatos&nbsp;válidos&nbsp;detiene&nbsp;la&nbsp;ejecución.</tt></dd></dl>
+ <dl><dt><a name="-cast_duracion"><strong>cast_duracion</strong></a>(duracion_string)</dt><dd><tt>Convierte&nbsp;una&nbsp;cadena&nbsp;con&nbsp;formato&nbsp;#d,#w,#m&nbsp;o&nbsp;#y&nbsp;en&nbsp;el&nbsp;número&nbsp;de&nbsp;días&nbsp;equivalente.<br>
+&nbsp;<br>
+Devuelve:<br>
+Número&nbsp;de&nbsp;días&nbsp;equivalente&nbsp;a&nbsp;la&nbsp;cadena&nbsp;indicada.<br>
+&nbsp;<br>
+Parámetros:<br>
+duracionString(string)&nbsp;-&nbsp;Cadena&nbsp;con&nbsp;formato&nbsp;#d,#w,#m&nbsp;o&nbsp;#y&nbsp;a&nbsp;ser&nbsp;transformada.<br>
+&nbsp;<br>
+Excepciones:<br>
+Si&nbsp;la&nbsp;cadena&nbsp;no&nbsp;tiene&nbsp;el&nbsp;formato&nbsp;deseado&nbsp;termina&nbsp;la&nbsp;ejecución</tt></dd></dl>
+ <dl><dt><a name="-cast_fecha"><strong>cast_fecha</strong></a>(fecha_string)</dt><dd><tt>Convierte&nbsp;un&nbsp;cadena&nbsp;en&nbsp;un&nbsp;objeto&nbsp;datetime<br>
+&nbsp;<br>
+Parámetros:<br>
+fecha_string(string)&nbsp;-&nbsp;cadena&nbsp;con&nbsp;la&nbsp;fecha&nbsp;a&nbsp;castear&nbsp;<br>
+&nbsp;<br>
+Excepciones:<br>
+Si&nbsp;no&nbsp;tiene&nbsp;el&nbsp;formato&nbsp;%YYYY-%mm-%dd&nbsp;o&nbsp;es&nbsp;una&nbsp;fecha&nbsp;imposible&nbsp;termina&nbsp;la&nbsp;ejecución&nbsp;del&nbsp;programa&nbsp;y&nbsp;comunica&nbsp;el&nbsp;error.</tt></dd></dl>
+ <dl><dt><a name="-cast_subtareas"><strong>cast_subtareas</strong></a>(subtareas_string)</dt><dd><tt>Convierte&nbsp;una&nbsp;cadena&nbsp;con&nbsp;las&nbsp;subtareas&nbsp;de&nbsp;una&nbsp;tarea&nbsp;en&nbsp;una&nbsp;lista&nbsp;que&nbsp;contiene&nbsp;el&nbsp;número&nbsp;de&nbsp;dichas&nbsp;tareas.<br>
+&nbsp;<br>
+Devuelve:<br>
+Lista&nbsp;con&nbsp;la&nbsp;las&nbsp;subtareas.&nbsp;Si&nbsp;no&nbsp;tiene&nbsp;subtareas&nbsp;devuelve&nbsp;una&nbsp;lista&nbsp;vacía.<br>
+&nbsp;<br>
+Parámetros:<br>
+subtareas_string(string)&nbsp;-&nbsp;cadena&nbsp;que&nbsp;contiene&nbsp;las&nbsp;subtareas&nbsp;en&nbsp;formato&nbsp;id1&amp;id2&nbsp;o&nbsp;id<br>
+Excepciones:<br>
+Si&nbsp;la&nbsp;cadena&nbsp;no&nbsp;tiene&nbsp;alguno&nbsp;de&nbsp;los&nbsp;formatos&nbsp;válidos&nbsp;detiene&nbsp;la&nbsp;ejecución.</tt></dd></dl>
+ <dl><dt><a name="-comprobar_dependencias_y_subtareas"><strong>comprobar_dependencias_y_subtareas</strong></a>(lista_tareas, lista_ids)</dt><dd><tt>Comprueba&nbsp;que&nbsp;el&nbsp;id&nbsp;de&nbsp;las&nbsp;dependencias&nbsp;y&nbsp;subtareas&nbsp;existe&nbsp;en&nbsp;el&nbsp;proyecto<br>
+&nbsp;<br>
+Parámetros:<br>
+lista_tareas(list)&nbsp;-&nbsp;lista&nbsp;de&nbsp;las&nbsp;tareas&nbsp;que&nbsp;se&nbsp;desean&nbsp;comprobar<br>
+lista_id(list)&nbsp;-&nbsp;lista&nbsp;de&nbsp;los&nbsp;id&nbsp;válidos</tt></dd></dl>
+ <dl><dt><a name="-comprobar_existencia_dependencias"><strong>comprobar_existencia_dependencias</strong></a>(tarea, lista_ids)</dt><dd><tt>Comprueba&nbsp;que&nbsp;el&nbsp;id&nbsp;de&nbsp;las&nbsp;dependencias&nbsp;de&nbsp;una&nbsp;tarea&nbsp;existe<br>
+&nbsp;<br>
+Parámetros:<br>
+tarea(tarea)&nbsp;-&nbsp;tarea&nbsp;que&nbsp;se&nbsp;desean&nbsp;comprobar<br>
+lista_ids(list)&nbsp;-&nbsp;lista&nbsp;donde&nbsp;se&nbsp;va&nbsp;a&nbsp;buscar&nbsp;la&nbsp;tarea</tt></dd></dl>
+ <dl><dt><a name="-comprobar_existencia_subtareas"><strong>comprobar_existencia_subtareas</strong></a>(tarea, lista_ids)</dt><dd><tt>Comprueba&nbsp;que&nbsp;el&nbsp;id&nbsp;de&nbsp;las&nbsp;subtareas&nbsp;de&nbsp;una&nbsp;tarea&nbsp;existe<br>
+&nbsp;<br>
+Parámetros:<br>
+tarea(tarea)&nbsp;-&nbsp;tarea&nbsp;que&nbsp;se&nbsp;desean&nbsp;comprobar<br>
+lista_ids(list)&nbsp;-&nbsp;lista&nbsp;donde&nbsp;se&nbsp;va&nbsp;a&nbsp;buscar&nbsp;la&nbsp;tarea</tt></dd></dl>
+ <dl><dt><a name="-crear_milestone"><strong>crear_milestone</strong></a>(row)</dt><dd><tt>Crea&nbsp;una&nbsp;tarea&nbsp;a&nbsp;partir&nbsp;de&nbsp;los&nbsp;datos&nbsp;que&nbsp;obtiene&nbsp;de&nbsp;la&nbsp;fila<br>
+&nbsp;<br>
+Parámetros:<br>
+row(row)&nbsp;-&nbsp;fila&nbsp;que&nbsp;contiene&nbsp;los&nbsp;datos&nbsp;a&nbsp;procesar</tt></dd></dl>
+ <dl><dt><a name="-crear_tarea"><strong>crear_tarea</strong></a>(row)</dt><dd><tt>Crea&nbsp;una&nbsp;tarea&nbsp;a&nbsp;partir&nbsp;de&nbsp;los&nbsp;datos&nbsp;que&nbsp;obtiene&nbsp;de&nbsp;la&nbsp;fila<br>
+&nbsp;<br>
+Parámetros:<br>
+row(row)&nbsp;-&nbsp;fila&nbsp;que&nbsp;contiene&nbsp;los&nbsp;datos&nbsp;a&nbsp;procesar</tt></dd></dl>
+ <dl><dt><a name="-hay_milestone"><strong>hay_milestone</strong></a>(row)</dt><dd><tt>Comprueba&nbsp;si&nbsp;en&nbsp;la&nbsp;fila&nbsp;hay&nbsp;especificada&nbsp;algún&nbsp;milestone<br>
+&nbsp;<br>
+Parámetros:<br>
+row(row)&nbsp;-&nbsp;fila&nbsp;que&nbsp;se&nbsp;quiere&nbsp;comprobar</tt></dd></dl>
+ <dl><dt><a name="-hay_tarea"><strong>hay_tarea</strong></a>(row)</dt><dd><tt>Comprueba&nbsp;si&nbsp;en&nbsp;la&nbsp;fila&nbsp;hay&nbsp;especificada&nbsp;alguna&nbsp;tarea<br>
+&nbsp;<br>
+Parámetros:<br>
+row(row)&nbsp;-&nbsp;fila&nbsp;que&nbsp;se&nbsp;quiere&nbsp;comprobar</tt></dd></dl>
+ <dl><dt><a name="-id_existe"><strong>id_existe</strong></a>(id, lista_ids)</dt><dd><tt>Comprueba&nbsp;si&nbsp;existe&nbsp;un&nbsp;id&nbsp;entre&nbsp;los&nbsp;una&nbsp;lista&nbsp;de&nbsp;id<br>
+&nbsp;<br>
+Parámetros:<br>
+id(string)&nbsp;-&nbsp;id&nbsp;de&nbsp;la&nbsp;tarea&nbsp;que&nbsp;se&nbsp;quiere&nbsp;comprobar<br>
+lista_ids(list)&nbsp;-&nbsp;lista&nbsp;donde&nbsp;se&nbsp;va&nbsp;a&nbsp;buscar</tt></dd></dl>
+ <dl><dt><a name="-parsear_tareas_csv"><strong>parsear_tareas_csv</strong></a>(path_csv)</dt><dd><tt>Convierte&nbsp;cada&nbsp;linea&nbsp;del&nbsp;archivo&nbsp;.csv&nbsp;en&nbsp;objetos&nbsp;tarea&nbsp;con&nbsp;los&nbsp;campos&nbsp;especificados.<br>
+&nbsp;<br>
+Devuelve:<br>
+lista_tareas:&nbsp;una&nbsp;lista&nbsp;que&nbsp;contiene&nbsp;todos&nbsp;los&nbsp;objetos&nbsp;tarea&nbsp;procesados.<br>
+&nbsp;<br>
+Prámetros:<br>
+path_csv&nbsp;-&nbsp;Path&nbsp;absoluto&nbsp;del&nbsp;archivo&nbsp;csv&nbsp;exportado&nbsp;de&nbsp;Google&nbsp;Sheets.</tt></dd></dl>
+ <dl><dt><a name="-validar_id"><strong>validar_id</strong></a>(id)</dt></dl>
+</td></tr></table>
+</body></html>
